@@ -10,7 +10,6 @@ function App({props}) {
     <Layout>
       <TopNav links={topNavLinks} />
       <Header links={mainNavLinks} />
-
       <h1>Hello</h1>
     </Layout>
   );

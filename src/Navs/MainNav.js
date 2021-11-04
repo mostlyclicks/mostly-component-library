@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../Brand/Logo'
 
 const MainNav = (props) => {
 
@@ -6,6 +7,7 @@ const MainNav = (props) => {
 
   return (
     <nav>
+      <Logo brand="ACME LLC"/>
       <ul>
         {links.map((link) => {
           return (
