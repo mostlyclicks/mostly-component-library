@@ -1,7 +1,6 @@
 import React from 'react'
 import MainNav from '../Navs/MainNav'
 
-
 const Header = (props) => {
 
   const links = props.links
