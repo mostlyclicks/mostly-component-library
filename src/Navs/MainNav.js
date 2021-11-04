@@ -1,10 +1,19 @@
 import React from 'react'
 
-const MainNav = () => {
+const MainNav = (props) => {
+
+  const links = props.links
+
   return (
-    <div>
-      
-    </div>
+    <nav>
+      <ul>
+        {links.map((link) => {
+          return (
+            <li><a href={link.url}>{link.linkText}</a></li>
+          )
+        })}
+      </ul>
+    </nav>
   )
 }
 

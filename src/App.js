@@ -9,6 +9,7 @@ function App({props}) {
   return (
     <Layout>
       <TopNav links={topNavLinks} />
+      <MainNav links={mainNavLinks} />
 
       <h1>Hello</h1>
     </Layout>
