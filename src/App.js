@@ -1,6 +1,6 @@
 import Layout from './Layout/Layout'
 import TopNav from './Navs/TopNav'
-import MainNav from './Navs/MainNav'
+import Header from './Layout/Header'
 import { topNavLinks, mainNavLinks } from './DummyData/NavData'
 
 
@@ -9,7 +9,7 @@ function App({props}) {
   return (
     <Layout>
       <TopNav links={topNavLinks} />
-      <MainNav links={mainNavLinks} />
+      <Header links={mainNavLinks} />
 
       <h1>Hello</h1>
     </Layout>
