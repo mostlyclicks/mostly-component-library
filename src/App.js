@@ -18,7 +18,7 @@ function App({props}) {
           Add routing for pages
           - start with home
         */}
-        <div className="flex gap-3 container mx-auto">
+        <div className="flex gap-3 flex-col md:flex-row container mx-auto">
           <Card />
           <Card />
           <Card />
