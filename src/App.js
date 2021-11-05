@@ -11,7 +11,11 @@ function App({props}) {
     <Layout>
       <TopNav links={topNavLinks} />
       <Header links={mainNavLinks} />
-      <h1>Hello</h1>
+        <h1>Hello</h1>
+        {/*
+          Add routing for pages
+          - start with home
+        */}
       <Footer primaryLinks={mainNavLinks} secondaryLinks={topNavLinks} />
     </Layout>
   );
