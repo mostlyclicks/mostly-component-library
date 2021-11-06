@@ -3,7 +3,7 @@ import BikeImg from "../images/MY22_ADH01_Red.jpg"
 
 const Card = () => {
   return (
-    <div className="md:w-1/3 rounded-md border border-gray-300 border-2">
+    <div className="md:w-1/3 rounded-md border border-gray-300 border-2 flex-row">
       <img src={BikeImg} alt="Time Red bike" className="w-100 rounded-tl-md rounded-tr-md" />
       <div className="p-3">
         <h1 className="mb-3 font-bold">TIME ALPE D'HUEZ 01</h1>
