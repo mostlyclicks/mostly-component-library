@@ -3,6 +3,7 @@ import TopNav from './Navs/TopNav'
 import Card from './Layout/Card'
 import Card2 from './Layout/Card2'
 import Header from './Layout/Header'
+import Hero from './Layout/Hero'
 import Footer from './Layout/Footer'
 
 import { topNavLinks, mainNavLinks } from './DummyData/NavData'
@@ -16,7 +17,8 @@ function App({props}) {
     <Layout>
       
       <Header links={mainNavLinks} />
-        <h1>Hello</h1>
+      <Hero />
+      
         {/*
           Add routing for pages
           - start with home
