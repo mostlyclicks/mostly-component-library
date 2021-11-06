@@ -6,9 +6,9 @@ const MainNav = (props) => {
   const links = props.links
 
   return (
-    <nav>
+    <nav className="flex flex-row justify-between">
       <Logo brand="ACME LLC"/>
-      <ul>
+      <ul className="flex flex-row">
         {links.map((link) => {
           return (
             <li><a href={link.url}>{link.linkText}</a></li>

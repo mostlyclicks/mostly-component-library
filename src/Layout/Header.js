@@ -6,7 +6,7 @@ const Header = (props) => {
   const links = props.links
 
   return (
-    <header>
+    <header className="container mx-auto">
       <MainNav links={links} />
     </header>
   )
