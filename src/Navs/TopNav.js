@@ -7,7 +7,7 @@ const TopNav = (props) => {
 
   return (
     <div>
-      <ul>
+      <ul className="flex flex-row justify-around md:justify-end py-2 px-4 md:gap-6 bg-gray-200 text-sm">
         {links.map((link) => {
 
           return (
