@@ -11,8 +11,10 @@ import { topNavLinks, mainNavLinks } from './DummyData/NavData'
 function App({props}) {
 
   return (
+    <>
+    <TopNav links={topNavLinks} />
     <Layout>
-      <TopNav links={topNavLinks} />
+      
       <Header links={mainNavLinks} />
         <h1>Hello</h1>
         {/*
@@ -34,6 +36,7 @@ function App({props}) {
         
       <Footer primaryLinks={mainNavLinks} secondaryLinks={topNavLinks} />
     </Layout>
+    </>
   );
 }
 

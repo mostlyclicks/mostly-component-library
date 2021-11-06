@@ -2,9 +2,9 @@ import React from 'react'
 
 const Layout = ({children}) => {
   return (
-    <div>
+    <main>
       {children}
-    </div>
+    </main>
   )
 }
 

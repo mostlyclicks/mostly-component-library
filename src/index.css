@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+main {
   padding:1rem;
 }
