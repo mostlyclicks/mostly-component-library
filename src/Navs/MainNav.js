@@ -7,7 +7,7 @@ const MainNav = (props) => {
 
   return (
     <nav className="flex flex-row justify-between">
-      <Logo brand="ACME LLC"/>
+      <Logo brand="Bike Site"/>
       <ul className="flex flex-row gap-6 items-center">
         {links.map((link) => {
           return (

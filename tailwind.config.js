@@ -10,6 +10,11 @@ module.exports = {
       'full': '100%',
       'hero': '650px'
     },
+    backgroundImage: {
+
+         'blue-hero': "url('/src/images/MY22_ADH01_Blue.jpg')",
+
+        },
     extend: {},
   },
   variants: {
