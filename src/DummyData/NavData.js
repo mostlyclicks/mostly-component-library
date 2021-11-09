@@ -6,7 +6,6 @@ export const topNavLinks = [
 
 export const mainNavLinks = [
   {url: "/", linkText: "Home"},
-  {url: "/services", linkText: "Services"},
-  {url: "/about", linkText: "About"},
-  {url: "/contact", linkText: "Contact"},
+  {url: "/bike-cards", linkText: "Bike Cards"},
+  {url: "/bike-cards-large", linkText: "Bike Cards Large"},
 ]
