@@ -1,3 +1,5 @@
+import * as React from "react"
+import { Routes, Route, Link } from "react-router-dom"
 import Layout from './Layout/Layout'
 import TopNav from './Navs/TopNav'
 import Card from './Layout/Card'
@@ -19,21 +21,19 @@ function App({props}) {
       <Header links={mainNavLinks} />
       <Hero />
       
-        {/*
-          Add routing for pages
-          - start with home
-        */}
-        <div className="flex gap-3 flex-col md:flex-row container mx-auto mb-4">
-          <Card />
-          <Card />
-          <Card />
-        </div>
+        <Routes>
+        <Route path="/bike-cards" element={
+           <div className="flex gap-3 flex-col md:flex-row container mx-auto mb-4">
+            <Card />
+            <Card />
+            <Card />
+          </div> 
+        }/>
+        </Routes>
+        
         <div className="flex gap-3 flex-col md:flex-row container mx-auto">
           <Card2 />
           <Card2 />
-          
-          
-          
         </div>
         
       <Footer primaryLinks={mainNavLinks} secondaryLinks={topNavLinks} />
