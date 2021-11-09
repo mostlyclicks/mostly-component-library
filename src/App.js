@@ -22,19 +22,22 @@ function App({props}) {
       <Hero />
       
         <Routes>
-        <Route path="/bike-cards" element={
-           <div className="flex gap-3 flex-col md:flex-row container mx-auto mb-4">
-            <Card />
-            <Card />
-            <Card />
-          </div> 
-        }/>
+          <Route path="/bike-cards" element={
+            <div className="flex gap-3 flex-col md:flex-row container mx-auto mb-4">
+              <Card />
+              <Card />
+              <Card />
+            </div> 
+          }/>
+          <Route path="/bike-cards-large" element={
+            <div className="flex gap-3 flex-col md:flex-row container mx-auto">
+              <Card2 />
+              <Card2 />
+            </div>
+          } />
         </Routes>
         
-        <div className="flex gap-3 flex-col md:flex-row container mx-auto">
-          <Card2 />
-          <Card2 />
-        </div>
+        
         
       <Footer primaryLinks={mainNavLinks} secondaryLinks={topNavLinks} />
     </Layout>
