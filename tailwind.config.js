@@ -8,7 +8,7 @@ module.exports = {
       '1/2': '50%',
       '3/4': '75%',
       'full': '100%',
-      'hero': '850px'
+      'hero': '450px'
     },
     backgroundImage: {
 

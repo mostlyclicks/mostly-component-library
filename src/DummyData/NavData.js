@@ -8,4 +8,5 @@ export const mainNavLinks = [
   {url: "/", linkText: "Home"},
   {url: "/bike-cards", linkText: "Bike Cards"},
   {url: "/bike-cards-large", linkText: "Bike Cards Large"},
+  {url: "/bike-cards-large/card-2-a", linkText: "Card 2A"}
 ]

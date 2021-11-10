@@ -14,7 +14,6 @@ const MainNav = (props) => {
           return (
             <li>
             <NavLink to={link.url} className="text-white"
-
               style={
                 ({ isActive }) => {
                   return (
@@ -33,5 +32,3 @@ const MainNav = (props) => {
 }
 
 export default MainNav
-
-

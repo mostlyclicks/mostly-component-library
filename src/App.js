@@ -1,9 +1,10 @@
 import * as React from "react"
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route, Link, Outlet } from "react-router-dom"
 import Layout from './Layout/Layout'
 import TopNav from './Navs/TopNav'
 import Card from './Layout/Card'
 import Card2 from './Layout/Card2'
+import Card2A from './Layout/Card2a'
 import Header from './Layout/Header'
 import Hero from './Layout/Hero'
 import Footer from './Layout/Footer'
@@ -22,6 +23,7 @@ function App({props}) {
       <Hero />
       
         <Routes>
+          
           <Route path="/bike-cards" element={
             <div className="flex gap-3 flex-col md:flex-row container mx-auto mb-4">
               <Card />
@@ -33,8 +35,12 @@ function App({props}) {
             <div className="flex gap-3 flex-col md:flex-row container mx-auto">
               <Card2 />
               <Card2 />
+              <Outlet />
             </div>
-          } />
+          }>
+            <Route path="card-2-a" element={<Card2A />} />
+            
+          </Route>
         </Routes>
         
         
