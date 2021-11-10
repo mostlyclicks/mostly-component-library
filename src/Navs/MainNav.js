@@ -1,4 +1,5 @@
 import React from 'react'
+import { Routes, Route, NavLink } from "react-router-dom"
 import Logo from '../Brand/Logo'
 
 const MainNav = (props) => {
@@ -11,7 +12,19 @@ const MainNav = (props) => {
       <ul className="flex flex-row gap-6 items-center">
         {links.map((link) => {
           return (
-            <li><a href={link.url} className="text-white">{link.linkText}</a></li>
+            <li>
+            <NavLink to={link.url} className="text-white"
+
+              style={
+                ({ isActive }) => {
+                  return (
+                    {
+                      textDecoration: isActive ? "underline" : ""
+                    }
+                  )
+                }
+              }
+            >{link.linkText}</NavLink></li>
           )
         })}
       </ul>
@@ -20,3 +33,5 @@ const MainNav = (props) => {
 }
 
 export default MainNav
+
+
