@@ -38,7 +38,7 @@ function App({props}) {
               <Outlet />
             </div>
           }>
-            <Route path="card-2-a" element={<Card2A />} />
+            <Route path="card-2-a" element={<Card2 />} />
             
           </Route>
         </Routes>
