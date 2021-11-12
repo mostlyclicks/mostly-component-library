@@ -1,4 +1,5 @@
 import React from 'react'
+import Overlay from './Overlay'
 
 const Popup = (props) => {
 
@@ -10,11 +11,7 @@ const Popup = (props) => {
           <button onClick={props.closeModal}>Close modal</button>
         </div>  
       </div>
-      <div className="bg-black opacity-80 w-screen h-screen z-10 absolute">
-        
-      </div>
-      
-
+      <Overlay />
     </div>
   )
 }
