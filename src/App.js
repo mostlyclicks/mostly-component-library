@@ -5,6 +5,7 @@ import TopNav from './Navs/TopNav'
 import Card from './Layout/Card'
 import Card2 from './Layout/Card2'
 import Card2A from './Layout/Card2a'
+import Popup from './Layout/Popup'
 import Header from './Layout/Header'
 import Hero from './Layout/Hero'
 import Footer from './Layout/Footer'
@@ -16,6 +17,7 @@ function App({props}) {
 
   return (
     <>
+    <Popup />
     <TopNav links={topNavLinks} />
     <Layout>
       
