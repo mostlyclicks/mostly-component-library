@@ -16,7 +16,11 @@ import { topNavLinks, mainNavLinks } from './DummyData/NavData'
 function App({props}) {
 
 
-  const [modalOpen, setModalOpen] = useState(true)
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const buttonHandler = () => {
+    setModalOpen(true)
+  }
 
 
   return (
@@ -28,6 +32,7 @@ function App({props}) {
       
       <Header links={mainNavLinks} />
       <Hero />
+      <button onClick={buttonHandler}>Click for modal</button>
       
         <Routes>
           
