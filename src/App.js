@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { Routes, Route, Link, Outlet } from "react-router-dom"
 import Layout from './Layout/Layout'
 import TopNav from './Navs/TopNav'
@@ -15,9 +15,14 @@ import { topNavLinks, mainNavLinks } from './DummyData/NavData'
 
 function App({props}) {
 
+
+  const [modalOpen, setModalOpen] = useState(true)
+
+
   return (
     <>
-    <Popup />
+    {modalOpen ? <Popup /> : ""}
+    
     <TopNav links={topNavLinks} />
     <Layout>
       
