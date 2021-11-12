@@ -22,10 +22,14 @@ function App({props}) {
     setModalOpen(true)
   }
 
+  const handleCloseModal = () => {
+    setModalOpen(false)
+  }
+
 
   return (
     <>
-    {modalOpen ? <Popup /> : ""}
+    {modalOpen ? <Popup closeModal={handleCloseModal} /> : ""}
     
     <TopNav links={topNavLinks} />
     <Layout>
