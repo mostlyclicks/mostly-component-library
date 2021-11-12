@@ -15,7 +15,6 @@ import { topNavLinks, mainNavLinks } from './DummyData/NavData'
 
 function App({props}) {
 
-
   const [modalOpen, setModalOpen] = useState(false)
 
   const buttonHandler = () => {
@@ -25,7 +24,6 @@ function App({props}) {
   const handleCloseModal = () => {
     setModalOpen(false)
   }
-
 
   return (
     <>
@@ -59,7 +57,7 @@ function App({props}) {
           </Route>
         </Routes>
         
-        
+    
         
       <Footer primaryLinks={mainNavLinks} secondaryLinks={topNavLinks} />
     </Layout>
