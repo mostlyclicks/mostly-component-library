@@ -3,10 +3,6 @@ import Overlay from './Overlay'
 
 const Popup = (props) => {
 
-//  const handleCloseModal = () => {
-//    props.
-//  }
-
   return (
     <div>
       <div className="flex justify-center absolute z-20 w-screen h-screen" onClick={props.closeModal}>
