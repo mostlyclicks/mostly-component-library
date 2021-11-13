@@ -7,7 +7,7 @@ const MainNav = (props) => {
   const links = props.links
 
   return (
-    <nav className={`flex pt-8 ${props.classes}`}>
+    <nav className={`flex ${props.classes}`}>
       
       <ul className="flex flex-row gap-6 items-center">
         {links.map((link) => {

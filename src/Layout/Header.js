@@ -8,7 +8,7 @@ const Header = (props) => {
   const links = props.links
 
   return (
-    <header className="container mx-auto flex flex-row">
+    <header className="container mx-auto flex justify-between">
       <Logo brand="Bike Site" classes="flex"/>
       <MainNav links={links} classes="hidden sm:flex" />
       <MobileNav classes="flex sm:hidden" />
