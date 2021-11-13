@@ -7,9 +7,13 @@ const MobileNav = (props) => {
 
   const links = props.links
 
+  const openNavHandler = () => {
+    console.log('clicked hamburger')
+  }
+
   return (
     <nav className="flex sm:hidden">
-      <Hamburger />
+      <Hamburger onOpenNav={openNavHandler} />
     </nav>
   )
 }
