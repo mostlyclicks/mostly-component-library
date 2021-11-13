@@ -1,5 +1,6 @@
 import React from 'react'
 import MainNav from '../Navs/MainNav'
+import MobileNav from '../Navs/MobileNav'
 
 const Header = (props) => {
 
@@ -8,6 +9,7 @@ const Header = (props) => {
   return (
     <header className="container mx-auto">
       <MainNav links={links} />
+      <MobileNav />
     </header>
   )
 }

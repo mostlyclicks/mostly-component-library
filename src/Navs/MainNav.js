@@ -9,7 +9,7 @@ const MainNav = (props) => {
   return (
     <nav className="flex flex-row justify-between pt-8">
       <Logo brand="Bike Site"/>
-      <ul className="flex flex-row gap-6 items-center">
+      <ul className="hidden sm:flex sm:flex-row gap-6 items-center">
         {links.map((link) => {
           return (
             <li>
