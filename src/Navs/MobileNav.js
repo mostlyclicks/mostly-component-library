@@ -1,21 +1,10 @@
 import React from 'react'
-import { NavLink } from "react-router-dom"
-import Hamburger from '../UI/Hamburger'
-
 
 const MobileNav = (props) => {
-
-  const links = props.links
-
-  const openNavHandler = () => {
-    console.log('clicked hamburger')
-    // props.onOpenMobileNav
-  }
-
   return (
-    <nav className="flex sm:hidden">
-      <Hamburger onOpenNav={props.onOpenMobileNav} />
-    </nav>
+    <div className="flex w-full h-48">
+      <button onClick={props.onCloseNav}>Close</button>
+    </div>
   )
 }
 
