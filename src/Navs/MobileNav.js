@@ -9,11 +9,12 @@ const MobileNav = (props) => {
 
   const openNavHandler = () => {
     console.log('clicked hamburger')
+    // props.onOpenMobileNav
   }
 
   return (
     <nav className="flex sm:hidden">
-      <Hamburger onOpenNav={openNavHandler} />
+      <Hamburger onOpenNav={props.onOpenMobileNav} />
     </nav>
   )
 }
