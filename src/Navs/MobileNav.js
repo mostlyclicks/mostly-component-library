@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
+import Hamburger from '../UI/Hamburger'
+
 
 const MobileNav = (props) => {
 
@@ -7,7 +9,7 @@ const MobileNav = (props) => {
 
   return (
     <nav className="flex sm:hidden">
-      Hello
+      <Hamburger />
     </nav>
   )
 }
