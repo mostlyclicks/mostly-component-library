@@ -6,7 +6,7 @@ const Logo = (props) => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-white">{brand}</h1>
+      <h1 className={`text-2xl font-bold text-white ${props.classes}`}>{brand}</h1>
     </div>
   )
 }
