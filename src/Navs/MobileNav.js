@@ -7,7 +7,7 @@ const MobileNav = (props) => {
 
   return (
     <div className="z-300 fixed top-8 left-0 flex flex-col w-full h-96 bg-black opacity-90">
-      <button onClick={props.onCloseNav} className="text-white self-end pt-2 pr-6">X</button>
+      <button onClick={props.onCloseNav} className="text-white text-4xl self-end pt-0 pr-6">–</button>
       <ul className="m-0 p-8">
         {links.map((link) => {
 
