@@ -6,16 +6,25 @@ const MobileNav = (props) => {
   const links = props.links
 
   return (
-    <div className="flex w-full h-48">
-      <ul>
+    <div className="z-300 fixed top-8 left-0 flex flex-col w-full h-96 bg-black opacity-90">
+      <button onClick={props.onCloseNav} className="text-white self-end pt-2 pr-6">X</button>
+      <ul className="m-0 p-8">
         {links.map((link) => {
 
           return (
-            <li><Link to={link.url} onClick={props.onCloseNav}>{link.linkText}</Link></li>
+            <li className="flex w-full border-b-2 p-4">
+              <Link 
+                to={link.url}
+                onClick={props.onCloseNav}
+                className="text-white"
+              >
+                {link.linkText}
+              </Link>
+            </li>
           )
         })}
       </ul>
-      <button onClick={props.onCloseNav}>Close</button>
+      <button onClick={props.onCloseNav} className="text-white">Close</button>
     </div>
   )
 }
