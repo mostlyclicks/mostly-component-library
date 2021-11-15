@@ -11,7 +11,7 @@ const MobileNav = (props) => {
         {links.map((link) => {
 
           return (
-            <li><Link to={link.url}>{link.linkText}</Link></li>
+            <li><Link to={link.url} onClick={props.onCloseNav}>{link.linkText}</Link></li>
           )
         })}
       </ul>
