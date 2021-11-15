@@ -20,7 +20,7 @@ const Header = (props) => {
   }
 
   return (
-    <header className="container mx-auto flex justify-between">
+    <header className="container mx-auto flex justify-between px-4">
       <Logo brand="Bike Site" classes="flex"/>
       <MainNav links={links} classes="hidden sm:flex" />
       <MobileOpen onOpenMobileNav={handleOpenMobileNav} classes="flex sm:hidden" />
