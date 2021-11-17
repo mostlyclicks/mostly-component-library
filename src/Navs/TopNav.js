@@ -14,8 +14,8 @@ const TopNav = (props) => {
             <li><a href={link.url}>{link.linkText}</a></li>
           )
         })}
-        
       </ul>
+
     </div>
   )
 }
