@@ -24,7 +24,9 @@ const Header = (props) => {
       <Logo brand="Bike Site" classes="flex"/>
       <MainNav links={links} classes="hidden sm:flex" />
       <MobileOpen onOpenMobileNav={handleOpenMobileNav} classes="flex sm:hidden" />
-      { navActive ? <MobileNav links={links} onCloseNav={handleCloseNav}/> : "" }
+      { navActive ? 
+        <MobileNav links={links} onCloseNav={handleCloseNav} classes="transition transform origin-top-right"/>
+        : "" }
     </header>
   )
 }
