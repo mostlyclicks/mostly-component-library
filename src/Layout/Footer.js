@@ -7,7 +7,7 @@ const Footer = (props) => {
   const secondaryNav = props.secondaryLinks
 
   return (
-    <footer>
+    <footer className="container mx-auto">
       <div>
         <ul>
           {mainNav.map((link) => {
