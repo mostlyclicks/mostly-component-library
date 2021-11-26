@@ -7,7 +7,8 @@ const Footer = (props) => {
   const secondaryNav = props.secondaryLinks
 
   return (
-    <footer className="container mx-auto">
+    <div className=" bg-gray-200">
+    <footer className="container mx-auto p-4">
       <div>
         <ul>
           {mainNav.map((link) => {
@@ -31,6 +32,7 @@ const Footer = (props) => {
 
       
     </footer>
+    </div>
   )
 }
 
