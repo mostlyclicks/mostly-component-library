@@ -8,7 +8,7 @@ const Footer = (props) => {
 
   return (
     <div className=" bg-gray-200">
-    <footer className="container mx-auto p-4">
+    <footer className="container mx-auto p-4 flex flex-row gap-8">
       <div>
         <ul>
           {mainNav.map((link) => {
@@ -19,7 +19,7 @@ const Footer = (props) => {
           })}
         </ul>
       </div>
-      <div>
+      <div className="flex-grow" >
         <ul>
           {secondaryNav.map((link) => {
 
@@ -28,6 +28,11 @@ const Footer = (props) => {
             )
           })}
         </ul>
+      </div>
+      <div className="">
+          555 Main St.<br/>
+          Park City, UT 84098<br/>
+          555-555-5555
       </div>
 
       
