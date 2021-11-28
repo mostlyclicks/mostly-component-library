@@ -35,7 +35,7 @@ function App({props}) {
       <Header links={mainNavLinks} />
       <Hero />
       <button onClick={buttonHandler}>Click for modal</button>
-      
+      <main className="container mx-auto">
         <Routes>
           
           <Route path="/bike-cards" element={
@@ -56,7 +56,7 @@ function App({props}) {
             
           </Route>
         </Routes>
-        
+      </main>
     
         
       <Footer primaryLinks={mainNavLinks} secondaryLinks={topNavLinks} />
